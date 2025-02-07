@@ -1,0 +1,30 @@
+@import "tailwindcss";
+
+*{
+    scrollbar-width: none;
+}
+
+.table-responsive {
+    width: 100%;
+    overflow-x: auto; /* Enables horizontal scrolling */
+    -webkit-overflow-scrolling: touch; /* Smooth scrolling on iOS */
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    min-width: 600px; /* Ensures table doesn't shrink too much */
+  }
+  
+  th, td {
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: left;
+  }
+  
+  @media (max-width: 768px) {
+    .table-responsive {
+      border: 1px solid #ddd; /* Optional: Adds border to maintain structure */
+    }
+  }
+  
